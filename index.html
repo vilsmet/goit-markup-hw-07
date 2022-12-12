@@ -118,7 +118,7 @@
       <section class="work">
         <div class="work__container">
           <h2 class="work__title">Чим ми займаємося</h2>
-          <ul class="list card-set">
+          <ul class="work__card-set">
             <li class="work__item">
               <img src="images/a1.jpg" alt="HTML code typing" width="370" class="box" />
               <p class="work__details">Десктопні додатки</p>
@@ -293,8 +293,8 @@
       <!--Customers-->
       <section class="customers">
         <div class="customers__queue">
-          <h2 class="staff__title">Постійні клієнти</h2>
-          <ul class="card-set">
+          <h2 class="customers__title">Постійні клієнти</h2>
+          <ul class="customers__card-set">
             <li class="customers__representative">
               <a class="customers__item" href="">
                 <svg class="customers__item-fill" width="106" height="60">
@@ -418,35 +418,35 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop__is-hidden" data-modal>
       <div class="modal">
-        <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form class="personal-data" autocomplete="on">
-          <div class="form-field">
-            <label class="name" for="name">Ім'я</label>
-            <input class="modal-name" type="name" name="name" id="name" autofocus />
-            <svg class="modal-person" width="12" height="12">
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form autocomplete="on">
+          <div class="modal__form-field">
+            <label class="modal__label" for="name">Ім'я</label>
+            <input class="modal__input" type="name" name="name" id="name" autofocus />
+          <svg class="modal__icon" width="12" height="12">
               <use href="./images/icons.svg#man"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="name" for="phone">Телефон</label>
-            <input class="modal-name" type="phone" name="phone" id="phone" autofocus />
-            <svg class="modal-person" width="13" height="13">
+          <div class="modal__form-field">
+            <label class="modal__label" for="phone">Телефон</label>
+            <input class="modal__input" type="phone" name="phone" id="phone" autofocus />
+            <svg class="modal__icon" width="13" height="13">
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="name" for="email">Пошта</label>
-            <input class="modal-name" type="email" name="email" id="email" autofocus />
-            <svg class="modal-person" width="15" height="12">
+          <div class="modal__form-field">
+            <label class="modal__label" for="email">Пошта</label>
+            <input class="modal__input" type="email" name="email" id="email" autofocus />
+            <svg class="modal__icon" width="15" height="12">
               <use href="./images/icons.svg#letter"></use>
             </svg>
           </div>
-          <div class="form-field text">
-            <label class="name" for="comment">Коментар</label>
+          <div class="modal__text">
+            <label class="modal__label" for="comment">Коментар</label>
             <textarea
-              class="name2"
+              class="modal__textarea"
               placeholder="Введіть текст"
               name="comment"
               id="comment"
@@ -455,20 +455,20 @@
               autofocus
             ></textarea>
           </div>
-          <div class="modal-conditions">
-            <input class="checkbox" type="checkbox" name="conditions" id="conditions" />
-            <label class="checkbox-label" for="conditions"
+          <div class="modal__conditions">
+            <input class="modal__checkbox" type="checkbox" name="conditions" id="conditions" />
+            <label class="modal__checkbox-label" for="conditions"
               >Погоджуюся з розсилкою та приймаю&nbsp;
-              <a class="modal-ref" href="">Умови договору</a>
+              <a class="modal__ref" href="">Умови договору</a>
             </label>
-            <svg class="modal-check" width="16" height="15">
+            <svg class="modal__check" width="16" height="15">
               <use href="./images/icons.svg#check"></use>
             </svg>
           </div>
-          <button type="submit" class="modal-button">Відправити</button>
+          <button type="submit" class="modal__button">Відправити</button>
         </form>
-        <button data-modal-close class="modal-close">
-          <svg class="modal-button-close" width="18" height="18">
+        <button data-modal-close class="modal__close">
+          <svg class="modal__button-close" width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
