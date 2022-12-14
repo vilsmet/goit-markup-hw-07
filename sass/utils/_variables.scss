@@ -5,6 +5,7 @@ $accent2-color: #ffffff;
 $button-color: #f5f4fa;
 $background-color: #2f303a;
 $button-active: #188ce8;
+$svgfill: #AFB1B8;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 h1,
@@ -22,8 +23,8 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--primary-text-color);
-  background-color: var(--accent2-color);
+  color: $primary-text-color;
+  background-color: $accent2-color;
   letter-spacing: 0.03em;
   margin: 0;
 }

@@ -27,7 +27,7 @@
 }
 .header__link {
   display: block;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -35,20 +35,20 @@
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
   text-decoration: none;
 
 &--current {
-  color: var(--accent1-color);
+  color: $accent1-color;
 }
 
 &:hover,
 &:focus {
-  color: var(--accent1-color);
-  fill: var(--accent1-color);
+  color: $accent1-color;
+  fill: $accent1-color;
 }
-}
-.header__link--current::after {
+
+&--current::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -58,26 +58,27 @@
   border-radius: 2px;
   width: 108%;
   height: 4px;
-  background-color: var(--accent1-color);
+  background-color: $accent1-color;
+}
 }
 .header__contact {
   display: flex;
   align-items: center;
-  color: var(--secondary-text-color);
-  fill: var(--secondary-text-color);
+  color: $secondary-text-color;
+  fill: $secondary-text-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color, fill;
   transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: $timing-function;
   text-decoration: none;
 
   &:hover,
   &:focus {
-  color: var(--accent1-color);
-  fill: var(--accent1-color);
+  color: $accent1-color;
+  fill: $accent1-color;
 }
 }
 .header__info {

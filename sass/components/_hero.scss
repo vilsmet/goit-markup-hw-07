@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--background-color);
+  background-color: $background-color;
   max-width: 1600px;
   margin: 0 auto;
   text-align: center;
@@ -18,7 +18,7 @@
   padding: 0 15px;
 }
 .hero__title {
-  color: var(--accent2-color);
+  color: $accent2-color;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
@@ -28,8 +28,8 @@
 }
 .hero__button {
   cursor: pointer;
-  color: var(--accent2-color);
-  background-color: var(--accent1-color);
+  color: $accent2-color;
+  background-color: $accent1-color;
   border-radius: 4px;
   padding: 10px 32px;
   border: none;
@@ -38,10 +38,10 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms $timing-function;
 
   &:hover,
   &:focus {
-    background-color: var(--button-active);
+    background-color: $button-active;
   }
 }
