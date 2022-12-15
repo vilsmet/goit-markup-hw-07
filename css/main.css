@@ -703,6 +703,7 @@ img {
 
 .modal__ref {
   position: relative;
+  text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   color: #2196f3;
