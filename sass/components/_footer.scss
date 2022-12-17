@@ -4,10 +4,7 @@
   margin-right: auto;
   padding: 60px 0;
 }
-.footer__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.footer__footer-center {
   display: flex;
   justify-content: space-between;
 }
@@ -29,10 +26,10 @@
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
 
-&:hover,
-&:focus {
-  color: $accent1-color;
-}
+  &:hover,
+  &:focus {
+    color: $accent1-color;
+  }
 }
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
@@ -74,11 +71,11 @@
   padding-left: 16px;
   transition: border 250ms $timing-function;
 
-&:hover,
-&:focus {
-  cursor: pointer;
-  border: 1px solid $accent1-color;
-}
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border: 1px solid $accent1-color;
+  }
 }
 .footer__button {
   display: flex;
@@ -96,10 +93,10 @@
   padding: 10px 28px;
   letter-spacing: 0.06em;
 
-&:hover,
-&:focus {
-  cursor: pointer;
-}
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 .footer__button-form {
   display: block;
